@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BigBug/BigBug.iml" filepath="$PROJECT_DIR$/BigBug/BigBug.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GitAnt.iml" filepath="$PROJECT_DIR$/GitAnt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>
