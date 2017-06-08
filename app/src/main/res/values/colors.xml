@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#CCCCCC</color>
-    <color name="colorPrimaryDark">#DEDEDE</color>
+    <color name="colorPrimary">#DEDEDE</color>
+    <color name="colorPrimaryDark">#CCCCCC</color>
     <color name="colorAccent">#858585</color>
     <color name="colorTextPrimary">#000000</color>
     <color name="colorTextGray">#474747</color>
+    <color name="iconBlue">#1296db</color>
+    <color name="iconGray">#707070</color>
+    <color name="btnPressed">#dbdbdb</color>
+    <color name="btnNormal">#707070</color>
+    <color name="devider">#ee000000</color>
 </resources>

@@ -1,0 +1,1 @@
+icon color blue #1296db  gray #707070

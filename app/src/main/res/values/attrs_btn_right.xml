@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BtnRight">
+        <attr name="iv_src" format="reference|integer"></attr>
+        <attr name="iv_padding" format="dimension"></attr>
+        <attr name="tv_desc" format="string"></attr>
+        <attr name="tv_text_size" format="dimension"></attr>
+        <attr name="tv_text_color" format="color"></attr>
+        <attr name="iv_arrow_src" format="reference|integer"></attr>
+        <attr name="iv_arrow_padding" format="dimension"></attr>
+        <attr name="devider_color" format="color"></attr>
+        <attr name="devider_height" format="dimension"></attr>
+    </declare-styleable>
+</resources>

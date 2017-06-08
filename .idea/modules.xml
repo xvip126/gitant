@@ -3,11 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/BigBug/BigBug.iml" filepath="$PROJECT_DIR$/BigBug/BigBug.iml" />
-      <module fileurl="file://$PROJECT_DIR$/BigBug/BigBug.iml" filepath="$PROJECT_DIR$/BigBug/BigBug.iml" />
       <module fileurl="file://$PROJECT_DIR$/GitAnt.iml" filepath="$PROJECT_DIR$/GitAnt.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gitant.iml" filepath="$PROJECT_DIR$/gitant.iml" />
     </modules>
   </component>
 </project>

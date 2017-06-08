@@ -1,15 +1,21 @@
 package com.gitant.gitant.ui.main;
 
 import android.content.Context;
+import android.widget.FrameLayout;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 import com.gitant.gitant.R;
 import com.gitant.gitant.common.base.BaseMvpActivity;
+import com.gitant.gitant.ui.test.TestActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import cn.com.ichile.bigbug.ActivityUtils;
+import cn.com.ichile.bigbug.AppUtils;
+import cn.com.ichile.bigbug.UIUtils;
 
 /**
  * FBI WARNING ! MAGIC ! DO NOT TOUGH !
@@ -21,6 +27,8 @@ public class MianActivity extends BaseMvpActivity<MainContentContact.View, MainC
 
     @BindView(R.id.nb_bottom)
     public BottomNavigationBar mBottomNavigationBar;
+    @BindView(R.id.rl_main_content)
+    public RelativeLayout mMainContent;
 
     private MainContentContact.Presenter mPresenter;
     private Context mContext;
@@ -54,20 +62,34 @@ public class MianActivity extends BaseMvpActivity<MainContentContact.View, MainC
     protected void processLogic() {
         mPresenter.start();
         //
-        mBottomNavigationBar.setMode(BottomNavigationBar.MODE_SHIFTING);
-        mBottomNavigationBar.setBackgroundStyle(BottomNavigationBar.BACKGROUND_STYLE_RIPPLE);
-        mBottomNavigationBar
-                .addItem(new BottomNavigationItem(R.mipmap.ic_launcher_round,"HOME"))
-                .setActiveColor(R.color.colorTextPrimary)
-                .addItem(new BottomNavigationItem(R.mipmap.ic_launcher_round,"MORE"))
-                .setActiveColor(R.color.colorTextPrimary)
-                .addItem(new BottomNavigationItem(R.mipmap.ic_launcher_round,"FIND"))
-                .setActiveColor(R.color.colorTextPrimary)
-                .addItem(new BottomNavigationItem(R.mipmap.ic_launcher_round,"MINE"))
-                .setActiveColor(R.color.colorTextPrimary)
-                .setFirstSelectedPosition(0)
-                .initialise();
+        mBottomNavigationBar.setMode(BottomNavigationBar.MODE_FIXED)
+                            .setBackgroundStyle(BottomNavigationBar.BACKGROUND_STYLE_STATIC)
+                            .setActiveColor(R.color.iconBlue)
+                            .addItem(new BottomNavigationItem(R.drawable.selector_btn_git,"开源"))
+                            .addItem(new BottomNavigationItem(R.drawable.selector_btn_repo,"仓库"))
+                            .addItem(new BottomNavigationItem(R.drawable.selector_btn_find,"发现"))
+                            .addItem(new BottomNavigationItem(R.drawable.selector_btn_mine,"我的"))
+                            .setFirstSelectedPosition(0)
+                            .initialise();
+        mBottomNavigationBar.setTabSelectedListener(new BottomNavigationBar.OnTabSelectedListener() {
 
+            @Override
+            public void onTabSelected(int position) {
+                if (position == 2) {
+                    ActivityUtils.startActivity(MianActivity.this, TestActivity.class);
+                }
+            }
+
+            @Override
+            public void onTabUnselected(int position) {
+
+            }
+
+            @Override
+            public void onTabReselected(int position) {
+
+            }
+        });
 
 
     }
