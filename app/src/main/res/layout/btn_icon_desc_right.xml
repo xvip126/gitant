@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/right_btn_root"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base50dp">
+
+
+        <ImageView
+            android:focusable="false"
+            android:id="@+id/iv_btn_right_item"
+            android:layout_width="@dimen/base50dp"
+            android:layout_height="@dimen/base50dp"
+            android:padding="@dimen/base10dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:focusable="false"
+            android:id="@+id/tv_btn_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/base3dp"
+            android:layout_toRightOf="@id/iv_btn_right_item"
+            android:gravity="center_vertical"
+            android:text="TTTTTTT"
+            android:textSize="@dimen/base18dp"/>
+
+        <ImageView
+            android:focusable="false"
+            android:id="@+id/iv_btn_right_arrow"
+            android:layout_width="@dimen/base50dp"
+            android:layout_height="@dimen/base50dp"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/base15dp"
+            android:src="@drawable/selector_btn_right"/>
+
+        <View
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="@color/devider"></View>
+    </RelativeLayout>
+
+</merge>

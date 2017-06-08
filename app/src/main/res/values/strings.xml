@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">GitAnt</string>
+    <string name="login">点击登录</string>
 </resources>
